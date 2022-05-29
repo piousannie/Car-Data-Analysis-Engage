@@ -1,4 +1,4 @@
-# Car-Data-Analysis-Project
+# Car Data Analysis Project
 
 ## Technology Stack Used-
 <p align="left">
@@ -11,7 +11,7 @@
 
 ## Introduction-
 
-Jupyter Notebook is used at the backend to generate the data analytics using Pythonic libraries such as Numpy, Pandas, Matplotlib, SeaBorn and Plotly to execute Exploratory Data Analysis(EDA) and deliver useful graphs and insights. The report follows a mathematical approach using k-means clustering to acheive the objective of identifying clusters of correlation. 
+HTML-CSS is used at frontend for the purpose of our web-based application project. Jupyter Notebook is used at the backend to generate the data analytics using Pythonic libraries such as Numpy, Pandas, Matplotlib, SeaBorn and Plotly to execute Exploratory Data Analysis(EDA) and deliver useful graphs and insights. The report follows a mathematical approach using k-means clustering to acheive the objective of identifying clusters of correlation. MySQL is used for identifying relationships and queries among the various variables. Python codes are used for cleaning data. PowerBI is used for  interactive data visualization which makes the analysis of data easier.
 
 ## Challenge-
 
@@ -30,11 +30,13 @@ For instance the car body type variable is a vital one, here is a list of the ca
 9. Pick-Up
 10. Sports
 
-And all of the variety above is only regarding the car body type which is only one variable! Not to mention the grey areas where some car body types can be irrelevant to customer decision.
+And all of the variety above is only regarding the car body type which is only one variable! Similarly, 40+ car manufacterers can be identified in the given dataset. Not to mention the grey areas where some car body types can be irrelevant to customer decision.
 
 ## Data-
 
-The dataset used in this report contains cars with their variants with 1200+ model/variants to study over 150+ features. Cleaning of data is done by running a series of python codes for removal of units, irregularities, etc. Mode of the features have been used to fill in empty cells where the data was unavailable.
+The dataset used in this report contains cars with their variants with 1200+ model/variants to study over 150+ features. Cleaning of data is done by running a series of python codes for removal of units, irregularities, etc. For example- Power and torque are equalised at 1000rpm each for the sake of comparision and the mode of the variables/ features has been used to fill in the empty cells where the data was unavailable. 
+
+Additional data was used from the internet to support the analysis and gather an approach for query solution.
 
 ## Exploratory Data Analysis-
 
@@ -58,14 +60,14 @@ The dataset used in this report contains cars with their variants with 1200+ mod
 ![image](https://user-images.githubusercontent.com/78022265/170819968-a3767411-c241-4e9c-9599-e3d491d311a0.png)
 
 ### Key Findings-
-1. Most cars use 4 cylinders
+1. Most cars use 4 cylinders followed by 3 and 6 cylinders.
 
 ## Cars by Seating Capacity-
 
 ![image](https://user-images.githubusercontent.com/78022265/170820026-94d3c006-70ef-4794-bffc-54f52a4218aa.png)
 
 ### Key Findings-
-1. Most cars are 5 seaters
+1. Most cars are 5 seaters followed by 7 seaters.
 
 ## Cars Count by Engine Fuel Type-
 
@@ -74,11 +76,13 @@ The dataset used in this report contains cars with their variants with 1200+ mod
 ![image](https://user-images.githubusercontent.com/78022265/170820084-110175d3-9b3b-4059-9f26-02a3690c44c6.png)
 
 ### Key Findings-
-1. Most cars use Petrol and Diesel
+1. Most cars use Petrol and Diesel.
 
-## Cars count by Engine Size-
+## Cars count by Engine Size w.r.t Displacement-
 
 ![image](https://user-images.githubusercontent.com/78022265/170820696-690bf936-9c99-4e5f-8068-4b520b54ed72.png)
+
+## Cars count by Engine Size w.r.t Power-
 
 ![image](https://user-images.githubusercontent.com/78022265/170820702-de123cc4-0bbe-4ad9-a188-951aa5385807.png)
 
@@ -87,15 +91,22 @@ The dataset used in this report contains cars with their variants with 1200+ mod
 ![image](https://user-images.githubusercontent.com/78022265/170820184-7ec5f3d5-ac07-4013-b92b-906a5822ea02.png)
 
 ### Key Findings-
-1. Displacement is directly proportional to Price; Higher the price, higher the displacement
+1. Displacement is directly proportional to Price; Higher the price, higher the displacement.
 
 ## Relationship between power and price-
 
-![image](https://user-images.githubusercontent.com/78022265/170820293-ae93f292-f532-4da4-af7e-ff6d3807c6e9.png)
+![image](https://user-images.githubusercontent.com/78022265/170874377-ec91fe12-2690-4689-b80b-4597ed6712a1.png)
 
 ### Key Findings-
-1. Horsepower of car is related to car price  
-2. Hatchbacks are the body type with the least horsepower and price
+1. Horsepower of car is related to car price.
+2. Hatchbacks are the body type with the least horsepower and price.
+
+# Relationship between price and mileage-
+
+![image](https://user-images.githubusercontent.com/78022265/170875407-23f8159c-c13d-4ca2-ab48-e4791dae4952.png)
+
+### Key Findings-
+1. Expensive cars tend to have worse mileage and vice versa.
 
 ## Checking Ex-Showroom Price distribution using normal and log scales due to the huge difference in prices-
 
@@ -126,7 +137,7 @@ The dataset used in this report contains cars with their variants with 1200+ mod
 ### Key Findings-
 1. There exists multicollinearity between variables.
 
-## Plotting pairwise relationships as pair plot visualization comes handy for Exploratory data analysis(EDA). Pairing plot visualizations from the given data helps find the relationship between them where the variables can be continuous or categorical.
+Plotting pairwise relationships as pair plot visualization comes handy for Exploratory data analysis(EDA). Pairing plot visualizations from the given data helps find the relationship between them where the variables can be continuous or categorical.
 
 ![image](https://user-images.githubusercontent.com/78022265/170839214-8cd98e5b-f92e-4640-bda5-4a5b1c15c3f9.png)
 
@@ -158,16 +169,17 @@ A correlation of -1.0 indicates a perfect negative correlation, and a correlatio
 16. Wheelbase is positively related to Torque
 17. Wheelbase is positively related to Length
 18. Doors is positively related to Seating Capacity
+19. Fuel tank is positively related to Displacement.
 
 ## Other Challenges-
 
 As shown in previous figures clustering the market needs a lot of effort as the separation of clusters is not that obvious. It's now clear that we have to look for many dimensions in order to cluster the automotive market. Since the more features we explore, the harder it is to cluster. These dimensions affect the decision of the buyers and is also preceived as totally different due to the various different mental models of buyers, in other words, price, horsepower and mileage are not everything and some buyers would like to have a long wheel base car, some would like to have wider car all of the previous features, and more, strongly affect the buyer' decisions.
 
-This means that two cars can have a very similar price and milage but one is a van with lots of space and the other is just a four doors sedan, these two cars are precieved as two different categories in the automotive industry so space "length width and height of the car" can also be a vital factor. So, a three dimensional representation won't tell everything, so thats why we will try to consider clustering to use the very different features associated with each car.
-
+This means that two cars can have a very similar price and milage but one is a van with lots of space and the other is just a four doors sedan, these two cars are precieved as two different categories in the automotive industry so space "length, width and height of the car" can also be a vital factor. So, a three dimensional representation won't tell everything, so thats why we will try to consider clustering to use the very different features associated with each car.
 
 ## Graphs and conclusions for the most sold car models
-Now we can check for the most popular car specifications and combinations from the cars with the most units sold, which are stated in order as below-
+
+Now we can check for the most popular car specifications and combinations from the models with the most units sold, which are stated in order as below-
 
 1. WagonR
 2. Swift
@@ -194,9 +206,15 @@ Now we can check for the most popular car specifications and combinations from t
 
 ![image](https://user-images.githubusercontent.com/78022265/170864342-040a6a2d-7f31-4b76-8d42-f8b69b021ae5.png)
 
+### Key Findings-
+1. SUVs are the most sold car body type.
+
 ## Most sold cars count by make-
 
 ![image](https://user-images.githubusercontent.com/78022265/170864653-4f705e30-c59b-4c4b-a10e-b88fda7d6d51.png)
+
+### Key Findings-
+1. Maruti Suzuki is the most sold car manufacturer.
 
 ## Checking Ex-Showroom Price distribution using normal and log scales due to the huge difference in prices
 
@@ -218,10 +236,22 @@ Now we can check for the most popular car specifications and combinations from t
 
 ![image](https://user-images.githubusercontent.com/78022265/170864832-d9273b9d-455a-4fef-98e1-a4810ceb1ae4.png)
 
+### Key Findings-
+1. Manual cars are the most sold car type followed by automatic cars.
+
 ## Most sold cars count by minimum turning radius-
 
 ![image](https://user-images.githubusercontent.com/78022265/170864630-c5a15786-993a-4b09-b8b5-790b9766ea93.png)
 
+## Conclusion-
+1. 78.6% of the most sold cars had 4 cylinders
+2. BS 6 accounted for 67.93% of most sold cars
+3. 5 seaters consist of 91.83% of most sold cars
+4. Maruti Suzuki is the most popular car manufacturer
+5. SUV accounted for 38.59% of most sold cars.
+6. Petrol cars accounted for 61.41% most sold cars.
+7. 79% of most sold cars have 2 airbags.
+8. 68.63% of most sold cars have 5 gears.
 
 ## Clustering
 
@@ -236,21 +266,34 @@ K-Means clustering is a method of vector quantization, originally from signal pr
 
 Now we can check some scatter plots but by adding clusters.
 
-## Plotting a interactive 3D scatter plot to check for power, mileage and the car manufacturer-
+## Plotting a 3D scatter plot to check for power, mileage and the car manufacturer-
 
 ![newplot](https://user-images.githubusercontent.com/78022265/170841793-cb105d25-bb88-454c-aef6-444a8fbe967a.jpg)
 
-## Plotting a interactive 3D scatter plot to check for power, mileage and the price-
+## Plotting a 3D scatter plot to check for price, power and the mileage-
 
-![1](https://user-images.githubusercontent.com/78022265/170841860-9cb6beb2-ea55-409f-95db-16e36371eafc.jpg)
+![image](https://user-images.githubusercontent.com/78022265/170875137-cc0ea9aa-a408-4945-9971-42d24c93bf60.png)
 
-## Price vs Power
+## Average prices of each cluster are as follows-
+
+![image](https://user-images.githubusercontent.com/78022265/170875293-d44494c0-4877-4310-8e93-478599d49f11.png)
+
+## Number of cars existing in each cluster-
+
+![image](https://user-images.githubusercontent.com/78022265/170875335-66f8be6e-2c3d-471b-8fe2-bb089e5e33a2.png)
+
+# Car body types in each cluster-
+
+![image](https://user-images.githubusercontent.com/78022265/170875511-326fc561-9c9a-4676-8b6c-6b7e478e1447.png)
+
+## Price vs Power-
 
 ![image](https://user-images.githubusercontent.com/78022265/170863261-9142daba-1e02-49b8-8646-6374c5282e3a.png)
 
 ### Key Findings-
 1. Clusters are strongly affected by the price with clear speration between clusters.
 2. No clusters can be separated for displacement.
+3. Expensive cares tend to have higher power and vice versa.
 
 ## Price vs Displacement
 
@@ -259,6 +302,7 @@ Now we can check some scatter plots but by adding clusters.
 ### Key Findings-
 1. Cluter separation can be performed on price.
 2. No clusters can be formed for displacement.
+3. Expensive cares tend to have higher displacement and vice versa.
 
 ## Price vs Cylinders
 
@@ -267,6 +311,7 @@ Now we can check some scatter plots but by adding clusters.
 ### Key Findings-
 1. Cluter separation can be performed on price.
 2. No clusters can be formed for cylinders.
+3. Expensive cares tend to have higher number of cylinders and vice versa.
 
 ## Price vs Torque
 
@@ -275,30 +320,44 @@ Now we can check some scatter plots but by adding clusters.
 ### Key Findings-
 1. Cluter separation can be performed on price.
 2. No clusters can be formed for torque.
+3. Expensive cares tend to have higher torque and vice versa.
 
 ## Cylinders vs Displacement
 
 ![image](https://user-images.githubusercontent.com/78022265/170863414-6acef260-4183-4078-aa95-e065fc9f5403.png)
 
+### Key Findings-
+1. Clusters are too sparse and blurry to be identified hence no conclusions can be made.
+
 ## Power vs Displacement
 
 ![image](https://user-images.githubusercontent.com/78022265/170863629-dbe522ab-7d42-43a7-bcec-97d0219e68dd.png)
+
+### Key Findings-
+1. Clusters are too sparse and blurry to be identified hence no conclusions can be made.
 
 ## Torque vs Displacement
 
 ![image](https://user-images.githubusercontent.com/78022265/170863679-8d585abd-653d-4c2d-9993-33e4f04f39ac.png)
 
+### Key Findings-
+1. Clusters are too sparse and blurry to be identified hence no conclusions can be made.
+
 ## Fuel Tank vs Displacement
 
 ![image](https://user-images.githubusercontent.com/78022265/170863689-842079cf-5b83-4ca4-bc44-5e4a2d53818f.png)
+
+### Key Findings-
+1. Clusters are too sparse and blurry to be identified hence no conclusions can be made.
 
 ## Power vs Cylinders
 
 ![image](https://user-images.githubusercontent.com/78022265/170863738-93259b0d-dd67-4a9f-8d06-8fdc86283e09.png)
 
 ### Key Findings-
-1. Cluter separation can be performed on cylinders.
+1. Cluster separation can be performed on cylinders.
 2. No clusters can be formed for Power.
+3. High power cars tend to use a higher number of cylinders in them and vice-versa.
 
 ## Torque vs Cylinders
 
@@ -307,6 +366,7 @@ Now we can check some scatter plots but by adding clusters.
 ### Key Findings-
 1. Cluter separation can be performed on cylinders.
 2. No clusters can be formed for Torque.
+3. High torque cars tend to use a higher number of cylinders in them and vice-versa.
 
 ## Fuel Tank Capacity vs Cylinders
 
@@ -315,52 +375,36 @@ Now we can check some scatter plots but by adding clusters.
 ### Key Findings-
 1. Cluter separation can be performed on cylinders.
 2. No clusters can be formed for fuel tank capacity.
+3. Cars with a higher number of cylinders used in them tend to have a higher fuel tank capacity and vice-versa.
 
 ## Power vs Mileage
 
 ![image](https://user-images.githubusercontent.com/78022265/170863903-a2ff86e6-a2e5-440d-9e1b-29f72723070e.png)
 
+### Key Findings-
+1. Clusters are too close to each other and blurry to be identified hence no conclusions can be made.
+
 ## Mileage vs ex-showroom price
 
 ![image](https://user-images.githubusercontent.com/78022265/170864750-4804a741-0563-48a1-81ed-ab532c1f7ef7.png)
 
-Key Findings-
-1. Mileage decreases as price increases
-
 ### Key Findings-
-1. Clear cluster speration in mileage.
-2. No cluster separation for power as they are difficult to separate.
-
-## Power vs Ex-Showroom Price
-
-![image](https://user-images.githubusercontent.com/78022265/170863954-7e313c6e-8702-45ed-8c21-fe3d1c6efacf.png)
+1. Cluster separation can be performed on mileage.
+2. No clusters can be formed for ex-showroom price.
+3. Mileage decreases as price increases and vice-versa.
 
 ## Power vs Fuel Tank-
 
 ![dsdcd](https://user-images.githubusercontent.com/78022265/170843570-bd32001e-dff4-4948-bede-3c7ac7363ba3.png)
 
-## Cylinders vs Power-
-
-![cczc](https://user-images.githubusercontent.com/78022265/170843616-52588320-82fe-4db6-9a4c-c62906bf0b99.png)
-
-## Fuel tank capacity vs Displacement
-
-![image](https://user-images.githubusercontent.com/78022265/170864008-2c79cd11-b19e-47b7-9bda-2b755279c0d8.png)
-
 ### Key Findings-
-1. Clear cluster speration in displacement.
-2. No cluster separation for fuel tank capacity as they are difficult to separate.
-
-## Engine size vs Fuel tank-
-
-####################################################################edit pic
-
-### Key Findings-
-1. No cluster separation can be done for both fuel tank capacity and engine size
+1. Cluster separation can be performed on horsepower.
+2. No clusters can be formed for fuel tank capacity.
+3. Power decreases as fuel tank capacity increases and vice-versa.
 
 ## Why Clustering?
 
-With clustring there are too many variables taken into considration which are hard to be traced by other normal methods. The clusters generated by the K-Means model can be used to identify strategic groups that form a strong competition to the company products in the market and it also shows the close clusters for this group which also can be put into considration in some cases. 
+With clustering there are too many variables taken into consideration which are hard to be traced by other normal methods. The clusters generated by the K-Means model can be used to identify strategic groups that form a strong competition to the company products in the market and it also shows the close clusters for this group which also can be put into consideration in some cases. 
 
 ### Advantages of k-means include the following-
 1. Relatively simple to implement.
@@ -386,7 +430,7 @@ As tempting as it's to use clustering to produce strategic groups it is worth me
 
 5. Scaling with number of dimensions- As the number of dimensions increases, a distance-based similarity measure converges to a constant value between any given examples. Reduce dimensionality either by using PCA on the feature data, or by using “spectral clustering” to modify the clustering algorithm as explained below.
 
-Conclusion-
-Clustering may be not determinant but it can be used to augment the management decision by using it alongside with human intuition to form the right strategic groups.
+## Conclusion-
+Data Analysis is the process of systematically applying statistical and/or logical techniques to describe and illustrate, condense and recap, and evaluate data. The dataset used in this report contained cars with their variants with 1200+ model/variants to study over 150+ features upon which Exploratory Data Analysis was performed to gain useful insights about the automative industry in India. Along with using clustering there were too many variables which were taken into consideration which are hard to be traced by other normal methods. The clusters generated by the K-Means model can be used to identify solutions for queries given in the problem statement. Clustering may be not determinant but it can be used to augment the management decision by using it alongside with human intuition to form the right strategic groups.
 
-Thankyou!
+This is the end of the report. Thankyou!
