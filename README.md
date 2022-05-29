@@ -7,6 +7,7 @@
 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
 <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a>
 <a href="[https://powerbi.microsoft.com/en-au/]" target="_blank" rel="noreferrer"><img src="![image](https://user-images.githubusercontent.com/78022265/170844442-0e434d35-1820-4876-9c3e-cef720f222c4.png)" width="36" height="36" alt="PowerBI" /></a>
+  <a href="[https://jupyter.org/]" target="_blank" rel="noreferrer"><img src="![image](https://user-images.githubusercontent.com/78022265/170844442-0e434d35-1820-4876-9c3e-cef720f222c4.png)" width="36" height="36" alt="Jupyter" /></a>
 </p>
 
 ## Introduction-
