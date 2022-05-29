@@ -1,4 +1,6 @@
-# Car Data Analysis Project for Engage
+# Car Data Analysis Project for Engage-
+
+For this project, we aim to extensively study and analyse the data given to us to be able to draw significant correlations and understand the patterns and trends in the automotive market. This helps us build conclusive results and a desirable set of specifications that must be required to deliver products that are actively accepted in the market. This helps the manufacturers to understand the market better so that they are able to launch car models that optimise costs and maximise profit.
 
 ## Technology Stack Used-
 <p align="left">
