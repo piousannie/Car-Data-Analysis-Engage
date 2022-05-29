@@ -401,7 +401,7 @@ Now we can check some scatter plots but by adding clusters.
 ### Key Findings-
 1. Cluster separation can be performed on horsepower.
 2. No clusters can be formed for fuel tank capacity.
-3. Power decreases as fuel tank capacity increases and vice-versa.
+3. Power increases as fuel tank capacity increases and vice-versa.
 
 ## Why use Clustering?
 
